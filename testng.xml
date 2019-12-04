@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CucumberDeviceAutomation">
+<!--Enter value as Emulator if scripts to be executed in Emulator otherwise real phones -->
+<parameter name="emulatorOrRealDevice" value="emulator"></parameter>
+
+	<test thread-count="1" name="Test">
+		
+		<parameter name="deviceName" value="Demo"></parameter>
+		<parameter name="platformVersion" value="7.0"></parameter>
+		<parameter name="udid" value="b4b5e0dd0304"></parameter>
+		<!-- Parameter for Executing in Emulator -->
+		<parameter name="avd" value="Demo"></parameter>
+
+		<classes>
+			<class name="org.cts.oneframework.testrunners.TestRunner" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
